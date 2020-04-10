@@ -1,0 +1,13 @@
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: localhost # Eureka 服务端实例名称
+  client:
+    register-with-eureka: false # 不向注册中心注册自己
+    fetch-registry: false # 不检索服务
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#  server:
+#    enable-self-preservation: false # 关闭自我保护机制,默认打开
+#    eviction-interval-timer-in-ms: 2000 # Eureka Server清除无效节点的时间间隔,默认60*1000毫秒
