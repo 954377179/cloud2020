@@ -1,1 +1,1 @@
-# cloud2020
+# Spring Cloud Demo
